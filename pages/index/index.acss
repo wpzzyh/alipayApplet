@@ -1,0 +1,22 @@
+swiper image {
+  height:150px;
+}
+.fake-searchbar {
+  position: absolute;
+  /* bottom: 0; */
+  left: 50%;
+  transform: translate(-50%, 50%);
+  height: 92rpx;
+  width: 91.4%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;     
+  border-radius: 4rpx;
+  box-shadow: rgba(153, 153, 153, 0.24) 0 2px 7px;
+}
+.fake-placeholder {
+  margin-left: 12rpx;
+  color: rgba(153, 153, 153, 0.89);
+  font-size: 28rpx;
+}

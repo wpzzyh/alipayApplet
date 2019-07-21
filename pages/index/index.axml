@@ -1,0 +1,30 @@
+<!-- 小程序收藏组件，更多高级用法请参考文档：https://docs.alipay.com/mini/component/component-favorite -->
+<!-- <favorite>收藏小程序，下次使用更方便</favorite> -->
+<view>
+  <!-- 顶部轮播图 -->
+  <view class="topswiper">
+    <swiper 
+      indicator-dots="true"
+      autoplay="true" 
+      circular="true" 
+      interval="3000"
+    >
+    <block a:for="{{pics}}">
+      <swiper-item>
+        <image mode="scaleToFill" src="{{item}}"/>
+      </swiper-item>
+    </block>
+    </swiper>
+  </view>
+
+  <!-- 搜索按钮 -->
+  <view class="fake-searchbar" onTap="onSearchBarTap">
+    <icon type="search" size="14" color="#1D1D1D" />
+    <text class="fake-placeholder">垃圾分类查询</text>
+  </view>
+
+  <!-- <button size="mini" type="primary" onTap="getData">点击获取数据</button> -->
+
+  <!-- <view style="margin-top: 10px;" /> -->
+<grid columnNum="{{4}}" list="{{navItem}}" hasLine="{{false}}" />
+</view>
